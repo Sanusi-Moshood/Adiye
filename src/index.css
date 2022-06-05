@@ -10,8 +10,16 @@ li{
 a{
   text-decoration: none;
 }
+@font-face {font-family: "VarelaRound"; 
+  src: url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.eot"); 
+  src: url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.eot?#iefix") 
+  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.woff2") 
+  format("woff2"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.woff") 
+  format("woff"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.ttf") 
+  format("truetype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.svg#Varela Round") 
+  format("svg"); }
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "VarelaRound";
 }
 .container {
   margin: 0 70px;
@@ -28,7 +36,9 @@ body {
   background: #FFF6CC;
   height: 100vh;
 }
-/* NavBar Style */
+
+
+/* NAVBAR STYLE START */
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -36,6 +46,7 @@ body {
   height: 60px;
   width: 90%;
   margin: auto;
+  border-bottom: 1px solid #ffe478;
 }
 .nav-logo{
   margin-right: auto;
@@ -85,16 +96,15 @@ body {
 .nav-active{
   z-index: 1;
   -webkit-animation: showNav 1s ease-in;
+  animation: showNav 1s ease-in;
 }
 @keyframes showNav {
   0% {opacity: 0;}
   50%{
-    opacity: 0.5;
-  }
-  70%{
-    opacity: 0.7;
+    opacity: 0.8;
   }
   100%{
     opacity: 1;
   }
 }
+/* NAVBAR STYLE ENDS */
