@@ -24,7 +24,7 @@ export default function Navbar() {
           <a href="" className='nav-link'>Invest</a>
         </li>
         <li className='nav-item'>
-          <a href="" className='nav-link'>Job</a>
+          <a href="" className='nav-link'>Jobc</a>
         </li>
       </ul>
       <img src={`/images/${active ? 'hamburger-menu.svg' : 'x-menu.svg'}`}alt="" onClick={navToggle}className='nav-toggle'/>
