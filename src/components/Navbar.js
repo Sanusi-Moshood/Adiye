@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
     <img src={`/images/${active ? 'navlogo2.svg' : 'navlogo-active.svg'}`} alt="" className='nav-logo'/>
-      <ul className={active ? 'nav-menu' : 'nav-menu nav-active'}>
+      <ul className={active ? 'nav-menu nav-false' : 'nav-menu nav-active'}>
         <li className='nav-item'>
           <a href="" className='nav-link'>Home</a>
         </li>

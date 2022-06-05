@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 const App = () => {
 
 
   return (
     <div className=''>
-
-      <section className='hero'>
+      <div className='nav-container'>
       <Navbar />
-        <div className='container'>
-
-        </div>
+      </div>
+      <section className='hero'>
+      <Hero />
       </section>
-  
+
     </div>
   );
 }

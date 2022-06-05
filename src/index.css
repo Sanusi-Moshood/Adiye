@@ -22,23 +22,30 @@ body {
   font-family: "VarelaRound";
 }
 .container {
-  margin: 0 70px;
+  width: 90%;
+  margin: auto;
 }
-
+/* 
 @media  (max-width: 800px) {
   .container{
     margin: 0 40px;
   }
-  }
+  } */
 
 /* Hero section */
 .hero{
   background: #FFF6CC;
   height: 100vh;
+  padding-top: 60px;
 }
 
-
 /* NAVBAR STYLE START */
+.nav-container{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: #FFF6CC;
+}
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -81,22 +88,23 @@ body {
   .nav-menu{
     position: absolute;
     top: 0px;
-    display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     align-items: center;
     padding-top: 60px;
     background-color: #FF7B00;
-    z-index: -1;
   
+  }
+  .nav-false{
+    display: none;
   }
 }
 
 .nav-active{
-  z-index: 1;
+  display: flex;
   -webkit-animation: showNav 1s ease-in;
-  animation: showNav 1s ease-in;
+  animation: showNav 0.5s ease-in;
 }
 @keyframes showNav {
   0% {opacity: 0;}
