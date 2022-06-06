@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 
@@ -7,10 +7,8 @@ const App = () => {
 
   return (
     <div className=''>
-      <div className='nav-container'>
+      <section className='view-port'>
       <Navbar />
-      </div>
-      <section className='hero'>
       <Hero />
       </section>
 

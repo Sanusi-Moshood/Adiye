@@ -1,14 +1,34 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function Navbar() {
-  const [active, setActive] = useState(true)
-  // const [toggleIcon, setToggleIcon] = useState("nav-toggle")
 
+
+const [scroll, setScroll] = useState(false)
+
+  useEffect( () => {
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset
+      if (currentScroll > 0) {
+        setScroll(true)
+      }else {
+        setScroll(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+
+  }, [])
+  
+  const [active, setActive] = useState(true);
   const navToggle = () => {
       setActive(prevActive => !prevActive)
   }
   return (
-    <nav className='navbar'>
+    <div className= {`nav-container ${scroll ? "navbar-active" : ''}`}>
+    <nav className={`navbar`}>
     <img src={`/images/${active ? 'navlogo2.svg' : 'navlogo-active.svg'}`} alt="" className='nav-logo'/>
       <ul className={active ? 'nav-menu nav-false' : 'nav-menu nav-active'}>
         <li className='nav-item'>
@@ -29,6 +49,8 @@ export default function Navbar() {
       </ul>
       <img src={`/images/${active ? 'hamburger-menu.svg' : 'x-menu.svg'}`}alt="" onClick={navToggle}className='nav-toggle'/>
     </nav> 
+    </div>
+
   )
 }
 
