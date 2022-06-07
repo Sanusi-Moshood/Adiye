@@ -150,7 +150,7 @@ body {
   margin-top: 30px;
   width: 80%;
   color: #1D1D1B;
-  font-size: clamp(40px, 6vw, 50px) ;
+  font-size: clamp(35px, 5vw, 50px) ;
 }
 .hero-h-text{
   color: #FF7B00;
