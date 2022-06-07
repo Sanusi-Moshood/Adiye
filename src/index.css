@@ -18,6 +18,8 @@ a{
   format("woff"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.ttf") 
   format("truetype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.svg#Varela Round") 
   format("svg"); }
+@font-face {font-family: "Roboto"; 
+  src: url("http://fonts.cdnfonts.com/css/roboto") }
 body {
   font-family: "VarelaRound";
 }
@@ -43,7 +45,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  width: 90%;
+  width: 93%;
   margin: auto;
   border-bottom: 1px solid #ffe478;
 }
@@ -123,7 +125,7 @@ body {
 
 /* Hero section */
 
-@media  (min-width: 768px){
+/* @media  (min-width: 768px){
   .hero-text{
     font-size: 40px;
   }
@@ -132,7 +134,7 @@ body {
   .hero-text{
     font-size: 30px;
   }
-}
+} */
 
 
 .view-port{
@@ -143,36 +145,74 @@ body {
   background: #FFF6CC;
   height: 100vh;
   padding-top: 60px;
+  position: relative;
 }
 .hero-text{
   margin-top: 30px;
   width: 80%;
   color: #1D1D1B;
+  font-size: clamp(35px, 5vw, 50px) ;
 }
 .hero-h-text{
   color: #FF7B00;
 }
 .hero-s-text{
-  font-family: roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  width: 60%;
+  font-size: clamp(14px, 2vw, 16px);
   color: #343A40;
-  margin-top: 25px;
+  margin-top: 10px;
+  width: 50%;
 }
 .hero-btn{
-padding: 8px 16px;
-width: 113px;
-height: 35px;
+  text-align: center;
+padding: 8px 20px;
 border: 1px solid #FF7B00;
 border-radius: 10px;
-margin-top: 25px;
+margin-top: 15px;
 margin-right: 22px;
 background-color: transparent;
 }
 .hero-btn a {
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 color: #1D1D1B;
 }
+.hero-img{
+  position: absolute;
+width: 45%;
+  right: 50px;
+  margin-top: -50px;
+}
+/* @media  (max-width: 1235px){
+  .hero-img{
+    margin-top: -40px;
+    right: 40px;
+  }
+} 
+@media  (max-width: 996px){
+  .hero-img{
+    right: 25px;
+    margin-top: -40px;
+  }
+} 
+@media  (max-width: 1027px){
+  .hero-img{
+    right: 20px;
+    margin-top: -90px;
+  }
+} 
+@media  (max-width: 865px){
+  .hero-img{
+    margin-top: -90px;
+    right: 0%;
+  }
+} 
+@media  (max-width: 763px){
+  .hero-img{
+
+    margin-top: -90px;
+    right: 0%;
+  }
+}  */
