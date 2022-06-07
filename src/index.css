@@ -18,8 +18,7 @@ a{
   format("woff"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.ttf") 
   format("truetype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.svg#Varela Round") 
   format("svg"); }
-@font-face {font-family: "Roboto"; 
-  src: url("http://fonts.cdnfonts.com/css/roboto") }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 body {
   font-family: "VarelaRound";
 }
@@ -151,15 +150,15 @@ body {
   margin-top: 30px;
   width: 80%;
   color: #1D1D1B;
-  font-size: clamp(35px, 5vw, 50px) ;
+  font-size: clamp(40px, 6vw, 50px) ;
 }
 .hero-h-text{
   color: #FF7B00;
 }
 .hero-s-text{
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: lighter;
   font-size: clamp(14px, 2vw, 16px);
   color: #343A40;
   margin-top: 10px;
@@ -173,46 +172,27 @@ border-radius: 10px;
 margin-top: 15px;
 margin-right: 22px;
 background-color: transparent;
-}
-.hero-btn a {
 font-weight: 400;
 font-size: 14px;
 color: #1D1D1B;
 }
+.hero-btn:hover {
+  background-color: #ffe478;
+  border: 1px dashed #FF7B00;
+  transition: 0.3s ease-in-out;
+  
+}
 .hero-img{
   position: absolute;
-width: 45%;
+  width: 45%;
   right: 50px;
   margin-top: -50px;
 }
-/* @media  (max-width: 1235px){
+@media  (max-width: 768px){
   .hero-img{
-    margin-top: -40px;
-    right: 40px;
+    display: none;
   }
+.hero-s-text{
+  width: 80%;
+}
 } 
-@media  (max-width: 996px){
-  .hero-img{
-    right: 25px;
-    margin-top: -40px;
-  }
-} 
-@media  (max-width: 1027px){
-  .hero-img{
-    right: 20px;
-    margin-top: -90px;
-  }
-} 
-@media  (max-width: 865px){
-  .hero-img{
-    margin-top: -90px;
-    right: 0%;
-  }
-} 
-@media  (max-width: 763px){
-  .hero-img{
-
-    margin-top: -90px;
-    right: 0%;
-  }
-}  */

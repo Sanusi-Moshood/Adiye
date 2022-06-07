@@ -10,8 +10,8 @@ const Hero = () => {
             <span className='hero-h-text'> nutritious</span> food for their <span className='hero-h-text'> family.</span>  
           </p>
           <p className='hero-s-text'>food innovators who thrive at the intersection of opportunity by upholding the highest standards in poultry.</p>
-          <button className='hero-btn'><a href="" >Contact</a></button>
-          <button className='hero-btn'><a href="" >Order now</a></button>
+           <a href=""><button className='hero-btn'>Contact</button></a>
+           <a href=""><button className='hero-btn'>Order now</button></a>
           <img src="/images/hero-img.svg" alt="" className='hero-img' />
         </div>
         {/* <div><img src="" alt="" /></div> */}
