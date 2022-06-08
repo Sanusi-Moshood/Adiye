@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  font-size: .7320644217vw;
+}
 li{
   list-style: none;
 }
@@ -20,19 +23,32 @@ a{
   format("svg"); }
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 body {
-  font-family: "VarelaRound";
-  font-family: 'Varela Round';
+  font-family: "VarelaRound", 'Varela Round';
 }
 .container {
   width: 89%;
   margin: auto;
 }
-/* 
-@media  (max-width: 800px) {
-  .container{
-    margin: 0 40px;
-  }
-  } */
+.btn-transparent{
+  display: inline-block;
+  text-align: center;
+padding: 8px 20px;
+border: 1px solid #FF7B00;
+border-radius: 10px;
+background-color: transparent;
+font-weight: 400;
+font-size: 14px;
+color: #1D1D1B;
+}
+.btn-mr{
+margin-right: 22px;
+}
+.btn-transparent:hover {
+  background-color: #ffe478;
+  border: 1px dashed #FF7B00;
+  transition: 0.3s ease-in-out;
+}
+
 
 /* NAVBAR STYLE START */
 .nav-container{
@@ -119,25 +135,8 @@ body {
   border: 0px;
 }
 
-/* NAVBAR STYLE ENDS */
 
-
-
-/* Hero section */
-
-/* @media  (min-width: 768px){
-  .hero-text{
-    font-size: 40px;
-  }
-}
-@media  (max-width: 900px){
-  .hero-text{
-    font-size: 30px;
-  }
-} */
-
-
-.home{
+#home{
   background: #FFF6CC;
 }
 .hero-container{
@@ -196,25 +195,7 @@ body {
   margin-bottom: 35px;
 
 }
-.btn-transparent{
-  display: inline-block;
-  text-align: center;
-padding: 8px 20px;
-border: 1px solid #FF7B00;
-border-radius: 10px;
-background-color: transparent;
-font-weight: 400;
-font-size: 14px;
-color: #1D1D1B;
-}
-.btn-mr{
-margin-right: 22px;
-}
-.btn-transparent:hover {
-  background-color: #ffe478;
-  border: 1px dashed #FF7B00;
-  transition: 0.3s ease-in-out;
-}
+
 .sub-hero-img{
   position: relative;
   width: 100%;
@@ -226,4 +207,41 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+/* About section---------------------------------------------------------------------------------------- */
+
+#about{
+  background: linear-gradient(180deg, #FFF6CC 0%, #FFFCF1 40.1%, #FFFCF1 45.31%);
+}
+.about-partner{
+  display: flex;
+align-items: center;
+gap: 40px;
+justify-content: flex-end;
+}
+.about-partner-text{
+  color: #8f959f;
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+}
+.p-logo-flex{
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 1025px){
+  .about-partner{
+flex-direction: column;
+  }
+  .p-logo-flex{
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(45rem,1fr));
+      align-items: center;
+      justify-items: center;
+      place-items: center;
+      width: 100%;
+      grid-column-gap: 20px;
+      grid-row-gap: 40px;
+  }
 }
