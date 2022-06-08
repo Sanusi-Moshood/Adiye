@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className=''>
-      <section className='view-port'>
+      <section className='home'>
       <Navbar />
       <Hero />
       </section>
