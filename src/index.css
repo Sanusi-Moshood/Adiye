@@ -21,6 +21,7 @@ a{
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 body {
   font-family: "VarelaRound";
+  font-family: 'Varela Round';
 }
 .container {
   width: 89%;
@@ -195,7 +196,8 @@ body {
   margin-bottom: 35px;
 
 }
-.hero-btn{
+.btn-transparent{
+  display: inline-block;
   text-align: center;
 padding: 8px 20px;
 border: 1px solid #FF7B00;
@@ -208,11 +210,10 @@ color: #1D1D1B;
 .btn-mr{
 margin-right: 22px;
 }
-.hero-btn:hover {
+.btn-transparent:hover {
   background-color: #ffe478;
   border: 1px dashed #FF7B00;
   transition: 0.3s ease-in-out;
-  
 }
 .sub-hero-img{
   position: relative;

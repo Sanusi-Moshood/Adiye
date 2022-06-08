@@ -13,8 +13,8 @@ const Hero = () => {
               <div className="sub-hero-dash"></div>
               <div >
                   <p className='hero-s-text'>food innovators who thrive at the intersection of opportunity by upholding the highest standards in poultry.</p>
-                  <a href="" ><button className='hero-btn btn-mr'>Contact</button></a>
-                  <a href=""><button className='hero-btn'>Order now</button></a>              
+                  <a href="" className='btn-transparent btn-mr'>Contact</a>
+                  <a href="" className='btn-transparent'>Order now</a>              
               </div>              
             </div>
             <div className='sub-hero-img'>
