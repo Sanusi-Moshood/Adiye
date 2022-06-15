@@ -19,18 +19,17 @@ const About = () => {
               <div><img src="/images/Logo-2.svg" alt="" className="about-partner-img" /></div>     
             </div>
           </div>
-          <div className="about-stroke about-stroke-1">
-
-          </div>
+          <div className="about-stroke about-stroke-1"></div>
           <div className="about-main">
               <h1 className="about-header">
-
+                About us 
               </h1>
               <p className="about-text">
-
+               We are a small business with great potenital aimed at bringing the poultry world in local countries online, helping wholesalers, retailers and consumers and feeding over 1 million homes
               </p>
-              <a href="" className='btn-transparent'></a>   
+              <a href="" className='btn-transparent about-btn'>Learn more</a>   
           </div>
+          <div className="about-stroke about-stroke-2"></div>
       </div>
     </div>
   )

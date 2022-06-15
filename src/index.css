@@ -13,17 +13,10 @@ li{
 a{
   text-decoration: none;
 }
-@font-face {font-family: "VarelaRound"; 
-  src: url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.eot"); 
-  src: url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.eot?#iefix") 
-  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.woff2") 
-  format("woff2"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.woff") 
-  format("woff"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.ttf") 
-  format("truetype"), url("//db.onlinewebfonts.com/t/eefe48639a01ef1f065d0373e895e859.svg#Varela Round") 
-  format("svg"); }
+  @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 body {
-  font-family: "VarelaRound", 'Varela Round';
+  font-family: 'Varela Round', sans-serif
 }
 .container {
   width: 89%;
@@ -197,7 +190,6 @@ margin-right: 22px;
 }
 
 .sub-hero-img{
-  position: relative;
   width: 100%;
   max-width: 374px;
   margin-bottom: 35px;
@@ -219,6 +211,7 @@ height: 100%;
 align-items: center;
 gap: 40px;
 justify-content: flex-end;
+margin-bottom: 25px;
 }
 .about-partner-text{
   color: #8f959f;
@@ -244,4 +237,43 @@ flex-direction: column;
       grid-column-gap: 20px;
       grid-row-gap: 40px;
   }
+}
+
+.about-main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 25px;
+}
+
+.about-header{
+  font-weight: 400;
+font-size: 50px;
+-webkit-text-stroke: 1px#FF7B00;
+-webkit-text-fill-color: transparent;
+margin-top: 25px
+}
+.about-text{
+font-weight: 300;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+color: #2b2b2a;
+}
+.about-btn{
+  margin-bottom: 25px;
+}
+.about-stroke{
+  background: 5px rgba(255, 123, 0, 0.25);
+  width: 878px;
+  height: 5px;
+  position: absolute;
+}
+.about-stroke-1{
+  left: 0%;
+}
+.about-stroke-2{
+  right: 0%;
 }
