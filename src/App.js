@@ -2,7 +2,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About'
-import Team from './components/Team'
+// import Team from './components/Team'
 
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
       <section id='about'>
       <About />
       </section>
-      <section id='team'>
+      {/* <section id='team'>
       <Team />
-      </section>
+      </section> */}
 
     </div>
   );
