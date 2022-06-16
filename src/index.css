@@ -121,7 +121,7 @@ margin-right: 22px;
 }
 /* navbar scroll */
 .navbar-active{
-  filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+  filter: drop-shadow(0 -10px 20px rgba(158, 158, 158, 0.699));
   border: 0px;
   background-color: #FFF6CC;
 }
@@ -207,9 +207,9 @@ height: 100%;
 #about{
   background: linear-gradient(180deg, #FFF6CC 0%, #FFFCF1 40.1%, #FFFCF1 45.31%);
 }
-.about-container{
+/* .about-container{
   margin-bottom: 40px;
-}
+} */
 .about-partner{
   display: flex;
 align-items: center;
@@ -289,9 +289,18 @@ color: #2b2b2a;
 
 /* Team section ------------------------------------------------------------------------------------- */
 
+#team{
+  background: #FFFCF1;
+}
+
 .team-container{
+  padding-top: 30px;
+}
+.team-container-2{
   display: flex;
+  background-color: #FFF6CC;
   padding: 1rem;
+  border-radius: 20px;
   box-shadow: 0px 4px 13px rgba(183, 178, 174, 0.25);
 }
 .team{
@@ -304,15 +313,19 @@ border-right: 2px solid rgba(255, 123, 0, 0.25);;
 }
 
 .team-content{
-
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
 }
 .team-header{
-
+  text-align: center;
 }
 .team-header p{
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 font-weight: 300;
 font-size: 12px;
+color: #ffbb7b;
 }
 .team-header h1{
   font-weight: 400;
@@ -323,6 +336,19 @@ font-size: 12px;
 .team-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-font-size: 13px;
+font-size: clamp(12px, 4vw, 14px) ;
 line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .team-container-2{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .team{
+    border-right: none;
+    }
+    .invest{
+      border-left: none;
+    }
 }
