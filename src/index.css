@@ -14,8 +14,9 @@ a{
   text-decoration: none;
 }
   @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-body {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  body {
   font-family: 'Varela Round', sans-serif
 }
 .container {
@@ -206,6 +207,9 @@ height: 100%;
 #about{
   background: linear-gradient(180deg, #FFF6CC 0%, #FFFCF1 40.1%, #FFFCF1 45.31%);
 }
+.about-container{
+  margin-bottom: 40px;
+}
 .about-partner{
   display: flex;
 align-items: center;
@@ -245,19 +249,19 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 0px;
-gap: 25px;
+gap: 15px;
 }
 
 .about-header{
   font-weight: 400;
-font-size: 50px;
--webkit-text-stroke: 1px#FF7B00;
+  font-size: clamp(30px, 5vw, 50px) ;
+-webkit-text-stroke: 1px #FF7B00;
 -webkit-text-fill-color: transparent;
 margin-top: 25px
 }
 .about-text{
 font-weight: 300;
-font-size: 17px;
+font-size: 16px;
 line-height: 20px;
 text-align: center;
 color: #2b2b2a;
@@ -267,13 +271,58 @@ color: #2b2b2a;
 }
 .about-stroke{
   background: 5px rgba(255, 123, 0, 0.25);
-  width: 878px;
+  width: 70%;
   height: 5px;
   position: absolute;
+ 
 }
 .about-stroke-1{
   left: 0%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .about-stroke-2{
   right: 0%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Team section ------------------------------------------------------------------------------------- */
+
+.team-container{
+  display: flex;
+  padding: 1rem;
+  box-shadow: 0px 4px 13px rgba(183, 178, 174, 0.25);
+}
+.team{
+padding: 3rem 5rem;
+border-right: 2px solid rgba(255, 123, 0, 0.25);;
+}
+.invest{
+  padding: 3rem 5rem;
+  border-left: 2px solid rgba(255, 123, 0, 0.25);;
+}
+
+.team-content{
+
+}
+.team-header{
+
+}
+.team-header p{
+  font-family: 'Roboto';
+font-weight: 300;
+font-size: 12px;
+}
+.team-header h1{
+  font-weight: 400;
+  font-size: clamp(30px, 4vw, 35px) ;
+-webkit-text-stroke: 1px #FF7B00;
+-webkit-text-fill-color: transparent;
+}
+.team-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+font-size: 13px;
+line-height: 26px;
 }
