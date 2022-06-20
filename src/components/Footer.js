@@ -1,25 +1,24 @@
 import React from 'react'
 
-const Contact = () => {
+const Footer = () => {
   return (
-    <div className='container'>
-      <div className="contact-container">
-          <div className="contact-form">
-            <div className="form-header">
-              <h1>Contact us</h1>
-              <p>Lorem ipsum consectetur adipiscing elit. Proin consectetur justo quis </p>
+    <div className="footer-container">
+    <div className="footer">
+        <img src="/images/footer-img.png" alt="" className="footer-logo" />
+        <div className="footer-links">
+            <div className="footer-link-col">
+                <a href="" className="footer-link">Home</a>
+                <a href="" className="footer-link">About</a>
+                <a href="" className="footer-link">Team</a>
             </div>
-            <form action="" className='form'>
-                <input type="text" name="" id="" placeholder='Your name' className=' input form-name'/> <br />
-                <input type="text" name="" id="" placeholder='Your email' className=' input form-mail'/> <br />
-                <textarea name="" id=""  placeholder='Write about your request'  className=' input textarea'></textarea>
-                <button className='contact-btn'>Send</button>
-              </form>
-          </div>
-          <div className="contact-info">
-              <div className="contact-info-box contact-links">
-              <h3 className="contact-list-header">Get in touch</h3>
-                  <div className="contact-link-content">
+            <div className="footer-link-col">
+                <a href="" className="footer-link">Contact</a>
+                <a href="" className="footer-link">Job</a>
+                <a href="" className="footer-link">Invest</a>
+            </div>
+        </div>
+        <div className="footer-socials">
+        <div className="contact-link-content footer-socials">
               <a href="" className="contact-list-link"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#FF7B00"/>
 </svg>
@@ -55,26 +54,14 @@ const Contact = () => {
               </div>
                   </div>
 
-              </div>
+        </div>
 
-              <div className="contact-info-box contact-location">
-              <div className="contact-location-abs">
-              <h1 className="contact-list-header">Location</h1>
-                  <div className="location-address">
-                    <span><svg width="43" height="61" viewBox="0 0 43 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.5 0.916687C10.0513 0.916687 0.791687 10.1763 0.791687 21.625C0.791687 37.1563 21.5 60.0834 21.5 60.0834C21.5 60.0834 42.2084 37.1563 42.2084 21.625C42.2084 10.1763 32.9488 0.916687 21.5 0.916687ZM21.5 29.0209C17.4175 29.0209 14.1042 25.7075 14.1042 21.625C14.1042 17.5425 17.4175 14.2292 21.5 14.2292C25.5825 14.2292 28.8959 17.5425 28.8959 21.625C28.8959 25.7075 25.5825 29.0209 21.5 29.0209Z" fill="#FF7B00"/>
-</svg>
-</span>
-                    <p>52, Club road Yabatech GRA, Yaba, Lagos</p>
-                  </div>
-              </div>
-              </div>
-
-
-          </div>
-      </div>
     </div>
+    <div className="copyright">
+        <p>© Adiye. All right reserved. Designed by Moshood Sanusi</p>
+    </div>
+  </div>
   )
 }
 
-export default Contact
+export default Footer
