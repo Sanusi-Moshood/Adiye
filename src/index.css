@@ -19,6 +19,11 @@ a{
   body {
   font-family: 'Varela Round', sans-serif
 }
+.error{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 .container {
   width: 89%;
   margin: auto;
@@ -78,6 +83,12 @@ margin-right: 22px;
 }
 .nav-link{
   color: #000000;
+}
+.nav-link-active{
+  border-bottom: 2.5px solid #FF7B00;
+}
+.nav-link-active2{
+  border-bottom: 2.5px solid #ffefe0;
 }
 
 
@@ -394,11 +405,18 @@ gap: 15px;
 width: 58rem;
 height: 50px;
 background: #FFFFFF;
-border: 0.867223px solid #FF7B00;
+border: 1px solid #FF7B00;
 border-radius: 9px;
 padding-left: 20px;
 background-color: transparent;
 font-family: 'Roboto', sans-serif;
+}
+
+.input-valid{
+  border: 1px solid  rgb(41, 228, 41);
+}
+.input-nValid{
+  border: 1px solid rgb(255, 0, 0);
 }
 .textarea{
   resize: none;
@@ -535,6 +553,8 @@ background-size: cover;
 
 
 
+
+
 /* footer section---------------------------------------------------------------------------------------------------------------------- */
 
 #footer{
@@ -598,6 +618,7 @@ gap: 15px;
   font-weight: 300;
   font-size: 14px;
   color: #1D1D1B;
+  text-align: center;
 }
 
 @media (max-width: 768px){
@@ -612,4 +633,68 @@ gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+
+
+/* AboutPage--------------------------------------------------------------------------------------------------------- */
+#About{
+  background: #FFF6CC;
+}
+.aboutPage-container{
+  padding: 15% 5% 0 5%; 
+  display: flex;
+  justify-content: center;
+}
+
+.aboutPage-img h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #1D1D1B;
+  font-weight: 400;
+  margin-top: 10px;
+}
+@media (max-width: 768px){
+  .aboutPage-container{
+flex-wrap: wrap;
+  }
+}
+#who{
+  padding: 20px 0 ;
+  background: linear-gradient(180deg, #FFF6CC 0%, #FFFCF1 40.1%, #FFFCF1 45.31%);
+}
+#career{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #FFF6CC;
+}
+#invest{
+  background: #FFF6CC;
+}
+.invest-text{
+  font-weight: 400;
+  font-size: clamp(25px, 4vw, 40px);
+}
+.invest-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  padding: 100px 0 20px 0;
+}
+@media (max-width: 768px){
+  .invest-container{
+flex-wrap: wrap;
+padding: 100px 0 30px 0;
+  }
+}
+.invest-partner{
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }

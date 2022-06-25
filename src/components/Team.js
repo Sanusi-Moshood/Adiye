@@ -25,7 +25,7 @@ const Team = () => {
             </div>
 
         </div>
-        <div className="invest">
+        <div className="invest" id='invest'>
         <div className="team-content">
                 <div className="team-header">
                     <h1>Invest with us</h1>

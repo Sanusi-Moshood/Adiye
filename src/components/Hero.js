@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -13,8 +14,8 @@ const Hero = () => {
               <div className="sub-hero-dash"></div>
               <div >
                   <p className='hero-s-text'>food innovators who thrive at the intersection of opportunity by upholding the highest standards in poultry.</p>
-                  <a href="" className='btn-transparent btn-mr'>Contact</a>
-                  <a href="" className='btn-transparent'>Order now</a>              
+                  <Link to="contact" spy={true} smooth={true} offset={50} duration={500}  href="" className='btn-transparent btn-mr'>Contact</Link>
+                  <a href="https://wa.me/09031428651" target={'_blank'} className='btn-transparent'>Order now</a>              
               </div>              
             </div>
             <div className='sub-hero-img'>
