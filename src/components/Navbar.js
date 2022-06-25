@@ -40,7 +40,7 @@ const [scroll, setScroll] = useState(false)
   return (
     <div className= {`nav-container ${scroll ? "navbar-active" : ''}`}>
     <nav className={`navbar`}>
-    <img src={`/images/${active ? 'navlogo2.svg' : 'navlogo-active.svg'}`} alt="" className='nav-logo'/>
+    <img src={`/images/${active ? 'navlogo2.svg' : !active ? 'navlogo-active.svg' : ''}`} alt="" className='nav-logo'/>
       <ul className={active ? 'nav-menu nav-false' : 'nav-menu nav-active'}>
         <li className='nav-item'>
           <NavLink to="/"  href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) } onClick={handleshow}>Home</NavLink>
