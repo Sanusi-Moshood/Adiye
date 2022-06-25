@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link }from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -8,14 +8,14 @@ const Footer = () => {
         <img src="/images/footer-img.png" alt="" className="footer-logo" />
         <div className="footer-links">
             <div className="footer-link-col">
-                <Link to="home" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Home</Link>
-                <Link to="about" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">About</Link>
+                <Link to="/" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Home</Link>
+                <Link to="/about" className="footer-link">About</Link>
                 <Link to="team" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Team</Link>
             </div>
             <div className="footer-link-col">
                 <Link to="contact" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Contact</Link>
-                <Link to="job" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Job</Link>
-                <Link to="invest" spy={true} smooth={true} offset={50} duration={500} href="" className="footer-link">Invest</Link>
+                <Link to="/job" className="footer-link">Job</Link>
+                <Link to="/invest" className="footer-link">Invest</Link>
             </div>
         </div>
         <div className="footer-socials">

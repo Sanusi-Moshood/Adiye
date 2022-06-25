@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Team = () => {
   return (
@@ -19,7 +20,7 @@ const Team = () => {
                     </p>
                 </div>
                 <div>
-                  <a href="" className='btn-transparent btn-team'>Learn more</a> 
+                  <Link to='/about' href="" className='btn-transparent btn-team'>Learn more</Link> 
                 </div>
 
             </div>
@@ -39,7 +40,7 @@ const Team = () => {
                     </p>
                 </div>
                 <div>
-                  <a href="" className='btn-transparent btn-team'>Learn more</a> 
+                  <Link to='/invest' href="" className='btn-transparent btn-team'>Learn more</Link> 
                 </div>
             </div>
         </div>

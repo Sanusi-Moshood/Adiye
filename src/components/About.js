@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -27,7 +28,7 @@ const About = () => {
               <p className="about-text">
                We are a small business with great potenital aimed at bringing the poultry world in local countries online, helping wholesalers, retailers and consumers and feeding over 1 million homes
               </p>
-              <a href="" className='btn-transparent about-btn'>Learn more</a>   
+              <Link to='/about'  className='btn-transparent about-btn'>Learn more</Link>   
           </div>
           <div className="about-stroke about-stroke-2"></div>
       </div>
