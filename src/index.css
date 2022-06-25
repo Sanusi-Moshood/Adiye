@@ -456,11 +456,11 @@ cursor: pointer;
     flex-wrap: wrap;
     }
   .input{
-    width: 85rem;
+    width: 100rem;
     height: 50px;
     }
     .textarea{
-      height: 212px;
+      height: 100px;
     }
 }
 
