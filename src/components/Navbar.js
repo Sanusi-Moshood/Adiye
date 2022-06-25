@@ -22,7 +22,7 @@ const [scroll, setScroll] = useState(false)
 
   }, [])
   
-  const [active, setActive] = useState(false);
+  const [Navactive, setActive] = useState(true);
   const navToggle = () => {
       setActive(prevActive => !prevActive)
   }
@@ -33,32 +33,32 @@ const [scroll, setScroll] = useState(false)
 
   function handleshow() {
     if(window.innerWidth <= 768){
-      setActive(prevActive => !prevActive)
+      setActive(true)
     }
   }
 
   return (
     <div className= {`nav-container ${scroll ? "navbar-active" : ''}`}>
     <nav className={`navbar`}>
-    <img src={`/images/${active ? 'navlogo2.svg' : !active ? 'navlogo-active.svg' : ''}`} alt="" className='nav-logo'/>
-      <ul className={active ? 'nav-menu nav-false' : 'nav-menu nav-active'}>
+    <img src={`/images/${Navactive ? 'navlogo2.svg' : !Navactive ? 'navlogo-active.svg' : ''}`} alt="" className='nav-logo'/>
+      <ul className={Navactive ? 'nav-menu nav-false' : 'nav-menu nav-active'}>
         <li className='nav-item'>
-          <NavLink to="/"  href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) } onClick={handleshow}>Home</NavLink>
+          <NavLink to="/"  href="" className={({ isActive }) => (`nav-link ${isActive && Navactive ? 'nav-link-active' : isActive && !Navactive ? 'nav-link-active2' : ''}`) } onClick={handleshow}>Home</NavLink>
         </li>
         <li className='nav-item'>
-          <NavLink to="/about"  href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>About</NavLink>
+          <NavLink to="/about"  href="" className={({ isActive }) => (`nav-link ${isActive && Navactive ? 'nav-link-active' : isActive && !Navactive ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>About</NavLink>
         </li>
         {/* <li className='nav-item'>
           <NavLink to="team"  href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>Team</NavLink>
         </li> */}
         <li className='nav-item'>
-          <NavLink to="/invest"   href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>Invest</NavLink>
+          <NavLink to="/invest"   href="" className={({ isActive }) => (`nav-link ${isActive && Navactive ? 'nav-link-active' : isActive && !Navactive ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>Invest</NavLink>
         </li>
         <li className='nav-item'>
-          <NavLink to="career"  href="" className={({ isActive }) => (`nav-link ${isActive && active ? 'nav-link-active' : isActive && !active ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>Career</NavLink>
+          <NavLink to="career"  href="" className={({ isActive }) => (`nav-link ${isActive && Navactive ? 'nav-link-active' : isActive && !Navactive ? 'nav-link-active2' : ''}`) }  onClick={handleshow}>Career</NavLink>
         </li>
       </ul>
-      <img src={`/images/${active ? 'hamburger-menu.svg' : 'x-menu.svg'}`}alt="" onClick={navToggle}className='nav-toggle'/>
+      <img src={`/images/${Navactive ? 'hamburger-menu.svg' : 'x-menu.svg'}`}alt="" onClick={navToggle}className='nav-toggle'/>
     </nav> 
     </div>
 
