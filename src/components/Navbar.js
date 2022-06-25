@@ -22,7 +22,7 @@ const [scroll, setScroll] = useState(false)
 
   }, [])
   
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   const navToggle = () => {
       setActive(prevActive => !prevActive)
   }
