@@ -1,14 +1,25 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import SharedRoute from './pages/SharedRoute'
 import Aboutpage from './pages/Aboutpage'
 import Home from './pages/Home'
 import Career  from './pages/Career'
 import Error from './pages/Error'
 import Invest from './pages/Invest'
+import { useLayoutEffect } from 'react'
 const App = () => {
+
+  const Wrapper = ({children}) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children
+  } 
+
   return (
     <BrowserRouter>
+    <Wrapper> 
     <Routes>
       <Route path='/' element={<SharedRoute />}>
         <Route index element={<Home />}/>
@@ -18,6 +29,7 @@ const App = () => {
       </Route>
       <Route path='*' element={<Error />}/>
     </Routes>
+     </Wrapper>
     </BrowserRouter>
   )
 }
