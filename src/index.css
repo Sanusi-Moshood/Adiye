@@ -99,6 +99,7 @@ margin-right: 22px;
   .nav-toggle{
     z-index: 10;
     display: block;
+    padding-right: 10px;
   }
   .nav-menu{
     position: absolute;
